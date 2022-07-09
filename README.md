@@ -1,17 +1,15 @@
-# BMI_Calculator_Flutter
+# BMI Calculator Using Flutter
  Calculator for BMI Index in Flutter with Material Design.
- 
  <br>
+ A beginners project to get introduce to the flutter development environment.
+ 
+ ## Snapshots
+<img src="Screenshots/Screenshot_1657369007.png" height="600" width="295"/> &nbsp; <img src="Screenshots/Screenshot_1657369023.png" height="600" width="295"/> &nbsp; <img src="Screenshots/Screenshot_1657369041.png" height="600" width="295"/>
+ 
+ Indexing Snapshots
+ 1. Home Page UI
+ 2. Input for weight and height
+ 3. BMI result with text result
 
-<table>
-  <tr>
-    <td><img src="![Screenshot_1657369007](https://user-images.githubusercontent.com/84095538/178106014-8e90e555-038e-4095-a181-3e997b07a165.png)" width=270 height=480></td>
-    <td><img src="![Screenshot_1657369023](https://user-images.githubusercontent.com/84095538/178106022-dc4970ff-b635-4b98-a9bb-fa801da943fc.png)" width=270 height=480></td>
-    <td><img src="![Screenshot_1657369041](https://user-images.githubusercontent.com/84095538/178106030-e02c0cf4-70b5-48e8-ad64-661a02d64577.png)" width=270 height=480></td>
-  </tr>
-  <tr>
-    <td>Home Page</td>
-     <td>Input for weight and height</td>
-     <td>BMI Result with text result</td>
-  </tr>
- </table>
+## Reference
+For help getting started with Flutter, view [online documentation](https://flutter.dev/docs), which offers tutorials, samples, guidance on mobile development, and a full API reference.
