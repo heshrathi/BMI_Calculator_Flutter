@@ -85,29 +85,37 @@ class _HomeScreenState extends State<HomeScreen> {
           SizedBox(
             height: 30,
           ),
-          GestureDetector(
-            onTap: () {
-              double _h = double.parse(_heightController.text);
-              double _w = double.parse(_weightController.text);
-              setState(() {
-                _bmiResult = _w / (_h * _h);
-                if (_bmiResult > 25) {
-                  _textResult = "You\'re Over Weight";
-                } else if (_bmiResult >= 18.5 && _bmiResult <= 25) {
-                  _textResult = "You have Normal Weight";
-                } else {
-                  _textResult = "You\'re Under Weight";
-                }
-              });
-            },
-            child: Text(
-              'Calculate',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-                color: accentColor,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              RightBar(barWidth: 100),
+              //for calculation button
+              GestureDetector(
+                onTap: () {
+                  double _h = double.parse(_heightController.text);
+                  double _w = double.parse(_weightController.text);
+                  setState(() {
+                    _bmiResult = _w / (_h * _h);
+                    if (_bmiResult > 25) {
+                      _textResult = "You\'re Over Weight";
+                    } else if (_bmiResult >= 18.5 && _bmiResult <= 25) {
+                      _textResult = "You have Normal Weight";
+                    } else {
+                      _textResult = "You\'re Under Weight";
+                    }
+                  });
+                },
+                child: Text(
+                  'Calculate',
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: accentColor,
+                  ),
+                ),
               ),
-            ),
+              LeftBar(barWidth: 100)
+            ],
           ),
           SizedBox(
             height: 50,
