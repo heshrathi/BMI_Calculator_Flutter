@@ -34,7 +34,15 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SingleChildScrollView(
         child: Column(children: [
           SizedBox(
+            height: 50,
+          ),
+          LeftBar(barWidth: 100),
+          SizedBox(
             height: 20,
+          ),
+          LeftBar(barWidth: 70),
+          SizedBox(
+            height: 40,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -73,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: "Height",
+                      hintText: "Weight",
                       hintStyle: TextStyle(
                           fontSize: 42,
                           fontWeight: FontWeight.w300,
@@ -83,12 +91,11 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              RightBar(barWidth: 100),
               //for calculation button
               GestureDetector(
                 onTap: () {
@@ -114,7 +121,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
-              LeftBar(barWidth: 100)
             ],
           ),
           SizedBox(
@@ -145,25 +151,25 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           SizedBox(
-            height: 40,
+            height: 30,
           ),
-          LeftBar(barWidth: 40),
+          RightBar(barWidth: 60),
           SizedBox(
             height: 20,
           ),
-          LeftBar(barWidth: 70),
+          RightBar(barWidth: 90),
           SizedBox(
             height: 20,
           ),
-          LeftBar(barWidth: 40),
+          RightBar(barWidth: 130),
           SizedBox(
             height: 20,
           ),
-          RightBar(barWidth: 70),
+          RightBar(barWidth: 90),
           SizedBox(
             height: 20,
           ),
-          RightBar(barWidth: 70),
+          RightBar(barWidth: 60),
         ]),
       ),
     );
