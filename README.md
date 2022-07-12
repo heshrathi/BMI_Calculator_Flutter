@@ -4,7 +4,7 @@
  A beginners project to get introduce to the flutter development environment.
  
  ## Snapshots
-<img src="Screenshots/Screenshot_1657369007.png" height="600" width="295"/> &nbsp; <img src="Screenshots/Screenshot_1657369023.png" height="600" width="295"/> &nbsp; <img src="Screenshots/Screenshot_1657369041.png" height="600" width="295"/>
+<img src="Screenshot/Screenshot_1.png" height="600" width="295"/> &nbsp; <img src="Screenshot/Screenshot_2.png" height="600" width="295"/> &nbsp; <img src="Screenshot/Screenshot_3.png" height="600" width="295"/>
  
  Indexing Snapshots
  1. Home Page UI
